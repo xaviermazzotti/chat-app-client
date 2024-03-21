@@ -1,0 +1,16 @@
+<main>
+  <div>
+    <div>Welcome to this simple chat!
+      <br>Remember, <i>just to send message</i> (:
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="content">
+    <form (submit)="onSubmit()">
+      <input [(ngModel)]="message" name="message">
+      <button>Send message</button>
+    </form>
+  </div>
+</main>
+
+<router-outlet />
